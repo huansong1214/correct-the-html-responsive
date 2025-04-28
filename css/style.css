@@ -170,15 +170,30 @@ hr {
 		align-items: center;
 	}
 
+	.main.module .container {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 20px;
+		width: 100%; /* fill the full width */
+    	max-width: none; /* remove max-width restriction */
+		padding: 20px;
+	}
+
 	.main-article {
-		width: 60%;
+		/* width: 60%; */
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
 	.main-sidebar {
-		width: 40%;
+		/* width: 40%; */
 		border-radius: 0.6rem;
 		margin: 0;
+	}
+
+	/* story page fills the full width */
+	#story .main.module .container {
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 }
